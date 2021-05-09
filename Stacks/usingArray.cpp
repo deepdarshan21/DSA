@@ -44,7 +44,16 @@ void pop(ll *S)
 
 void top(ll *S)
 {
-    cout << "HEAD VALUE: " << S[0] << endl;
+    ll i = 0;
+    while (1)
+    {
+        if (S[i] == 0)
+        {
+            break;
+        }
+        ++i;
+    }
+    cout << "Top Element " << S[i - 1] << endl;
 }
 
 void isEmpty(ll *S)
