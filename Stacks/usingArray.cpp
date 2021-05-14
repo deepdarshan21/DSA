@@ -1,5 +1,6 @@
 // Author : Deepdarshan
 //Program of stack using arrays
+//It follows LIFO(Last In First Out)
 
 #include <bits/stdc++.h>
 #include <conio.h>
