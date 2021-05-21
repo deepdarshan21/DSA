@@ -1,4 +1,4 @@
-// Program for implementing tree
+// Program for finding Maximum and Minimum
 
 #include <bits/stdc++.h>
 using namespace std;
