@@ -12,6 +12,7 @@ void swap(ll i, ll j, ll A[])
     temp = A[i];
     A[i] = A[j];
     A[j] = temp;
+    
 }
 
 struct Node
@@ -22,6 +23,7 @@ struct Node
 
 void insert(Node **head, ll data, ll pos)
 {
+    cou
     Node *temp = new Node;
     temp->data = data;
     temp->next = NULL;
@@ -72,6 +74,7 @@ void print(Node **head)
 
 int main()
 {
+    
     Node *A = NULL;
     cout << "Enter the elements and its position that you want to add in the linked list(to stop write '-1'): ";
     ll data, pos;
