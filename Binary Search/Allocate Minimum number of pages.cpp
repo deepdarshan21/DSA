@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
-    Time Complexity: O(log(n)) Space Complexity: O(1)
+    Time Complexity: O(nlog(n)) Space Complexity: O(1)
 */
 
 bool isValid(vector<int> arr, int key, int mid) {
