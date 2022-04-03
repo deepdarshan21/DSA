@@ -34,6 +34,10 @@ int minDiffElementApproach1(vector<int> arr, int target) {
     return arr[0];
 }
 
+/*
+    Time Complexity: O(log(n)) Space Complexity: O(1)
+*/
+
 int minDiffElementApproach2(vector<int> arr, int target) {
     int low = 0, mid, high = arr.size() - 1;
     while (low <= high) {
