@@ -15,8 +15,6 @@ int indexOfFirst1(vector<int> arr) {
         low = high;
         high *= 2;
     }
-    cout << arr[high] << endl;
-    cout << low << " " << high << endl;
 
     // apply normal BS on subarray where target is lying
     while (low <= high) {

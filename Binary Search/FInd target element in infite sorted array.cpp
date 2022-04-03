@@ -7,7 +7,7 @@ using namespace std;
 /*
     Time Complexity: O(log(n)) Space Complexity: O(1)
 */
-int binarySearchOnInfinite(vector<int> arr, int target) {
+int indexOfFirst1(vector<int> arr, int target) {
     int low = 0, mid, high = 1;
     // find the subarray where target element is lying
     while (target >= arr[high]) {
@@ -35,10 +35,10 @@ int binarySearchOnInfinite(vector<int> arr, int target) {
 int main() {
     vector<int> arr{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
-    cout << binarySearchOnInfinite(arr, 10) << endl;
-    cout << binarySearchOnInfinite(arr, 5) << endl;
-    cout << binarySearchOnInfinite(arr, 14) << endl;
-    cout << binarySearchOnInfinite(arr, 18) << endl;
+    cout << indexOfFirst1(arr, 10) << endl;
+    cout << indexOfFirst1(arr, 5) << endl;
+    cout << indexOfFirst1(arr, 14) << endl;
+    cout << indexOfFirst1(arr, 18) << endl;
 
     return 0;
 }
