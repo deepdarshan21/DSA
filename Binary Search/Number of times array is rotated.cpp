@@ -26,10 +26,31 @@ int numberOfTimesRotated(vector<int> arr) {
     return (arr.size() - midPos) % arr.size();
 }
 
+int findMin(vector<int>& nums) {
+    int low = 0, mid, high = nums.size() - 1;
+    while (low < high) {
+        mid = low + (high - low) / 2;
+        if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
+            // for duplicates
+            low++;
+            high--;
+        } else {
+            if (nums[mid] > nums[high]) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
+        }
+    }
+    return nums[low];
+}
+
 int main() {
     vector<int> arr{10, 11, 12, 13, 14, 15, 7, 8, 9};
 
     cout << numberOfTimesRotated(arr) << endl;
+
+    cout << findMin(arr) << endl;
 
     return 0;
 }
