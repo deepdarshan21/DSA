@@ -8,7 +8,7 @@ using namespace std;
     Time Complexity: O(log(n)) Space Complexity: O(1)
     Remarks: binary search on answer.
     Indentify the correct position by dividing both array into two parts and comparing
-    left1(max element) with right2(min element) and left2(max element) with right1(min element)
+    left1(max element) with right2(min element) and left2(max element)` with right1(min element)
 */
 
 double findMedian(vector<int> arr1, vector<int> arr2) {
